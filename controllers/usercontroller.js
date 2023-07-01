@@ -75,4 +75,8 @@ const currentUser = asyncHandler( async (req,res) => {
     res.json(req.user)
 });
 
-module.exports = { registerUSer, loginUser, currentUser }
+const homePage = asyncHandler( async(req,res)=>{
+    res.render('index');
+})
+
+module.exports = { registerUSer, loginUser, currentUser, homePage }

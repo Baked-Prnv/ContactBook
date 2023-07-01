@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ContactBook API</title>
+</head>
+<body>
+  <h1>Welcome to ContactBook backend API</h1>
+<ul>
+    <li>POST /register | payload {"username":"someName","email":"someEmail","password":"somePassword"} => for registering new user </li>
+    <li>POST /login | payload {"email":"someEmail","password":"somePassword"} => for login with registered user</li>
+    <li>GET /current => for current user info</li>
+    <li>GET /contact => to get contactList of authenticated user</li>
+    <li>POST /contact | payload {"name":"someName","email":"someEmail","phone":"SomeNumber"} => to add contact to authorised users contactList</li>
+    <li>GET /contact/id => to get contact with id from contactList</li>
+    <li>PUT /contact/id | payload {"name":"someName","email":"someEmail","phone":"SomeNumber"} => to update contact with id from authorised users contactList</li>
+    <li>DELETE /contact/id => to delete contact with id from authorised users contactList</li>
+</ul>
+</body>
+</html>
